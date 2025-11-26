@@ -3,18 +3,10 @@
 Contains business logic and external service integrations.
 """
 
-from app.services.gemini_client import (
-    flash_model,
-    pro_model,
-    get_flash_model,
-    get_pro_model,
-)
-from app.services.travel_service import process_travel_request
+from app.services.gemini_client import get_flash_model
+from app.services.travel_service_new import process_travel_request_new
 
 __all__ = [
-    "flash_model",
-    "pro_model",
     "get_flash_model",
-    "get_pro_model",
-    "process_travel_request",
+    "process_travel_request_new",
 ]

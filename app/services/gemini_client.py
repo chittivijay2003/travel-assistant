@@ -1,49 +1,44 @@
 """Gemini AI Client Module.
 
-Initializes and manages Google Gemini models via LangChain.
-Provides access to both Flash and Pro model instances for travel assistance.
-
-Models:
-    - Gemini Flash: Fast, concise responses optimized for speed
-    - Gemini Pro: Detailed, comprehensive responses with richer context
+Initializes and manages Google Gemini Flash model.
+Provides access to the model instance for travel assistance.
 """
 
-from langchain_google_genai import ChatGoogleGenerativeAI
+import google.generativeai as genai
+from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from app.config import settings
+from functools import lru_cache
 
 
-# Initialize Gemini Flash model
-# Optimized for speed with concise, quick responses
-flash_model = ChatGoogleGenerativeAI(
-    model=settings.gemini_flash_model,
-    google_api_key=settings.google_api_key,
-    temperature=settings.model_temperature,  # Configurable from .env
-    max_output_tokens=settings.flash_max_tokens,  # Configurable from .env
-)
-
-# Initialize Gemini Pro model
-# Optimized for detail with comprehensive, context-rich responses
-pro_model = ChatGoogleGenerativeAI(
-    model=settings.gemini_pro_model,
-    google_api_key=settings.google_api_key,
-    temperature=settings.model_temperature,  # Configurable from .env
-    max_output_tokens=settings.pro_max_tokens,  # Configurable from .env
-)
+# Lazy initialization with caching to avoid slow startup
+_flash_model = None
 
 
-def get_flash_model() -> ChatGoogleGenerativeAI:
-    """Get the Gemini Flash model instance.
+@lru_cache(maxsize=1)
+def get_flash_model():
+    """Get the Gemini Flash model instance (lazy loaded).
 
     Returns:
-        ChatGoogleGenerativeAI: The initialized Flash model for quick responses.
+        GenerativeModel: The initialized Flash model for quick responses.
     """
-    return flash_model
+    global _flash_model
+    if _flash_model is None:
+        genai.configure(api_key=settings.google_api_key)
 
+        # Configure safety settings to reduce blocking
+        safety_settings = {
+            HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+        }
 
-def get_pro_model() -> ChatGoogleGenerativeAI:
-    """Get the Gemini Pro model instance.
-
-    Returns:
-        ChatGoogleGenerativeAI: The initialized Pro model for detailed responses.
-    """
-    return pro_model
+        _flash_model = genai.GenerativeModel(
+            "gemini-2.5-flash",  # Latest stable flash model
+            generation_config={
+                "temperature": settings.model_temperature,
+                "max_output_tokens": settings.max_output_tokens,
+            },
+            safety_settings=safety_settings,
+        )
+    return _flash_model

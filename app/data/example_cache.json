@@ -1,0 +1,385 @@
+{
+  "cache": {
+    "pune_gaudi_architecture,_tapas_bars,_beaches,": [
+      {
+        "id": "trip_003",
+        "destination": "Barcelona, Spain",
+        "travel_dates": "September 5-12, 2024",
+        "preferences": "Gaudi architecture, tapas bars, beaches, nightlife",
+        "flight_summary": "Iberia Premium Economy, BCN direct, $950 round-trip",
+        "hotel_summary": "Hotel Arts Barcelona, beachfront luxury, $280/night",
+        "itinerary_highlights": [
+          "Sagrada Familia morning",
+          "Park Guell afternoon",
+          "Gothic Quarter tapas crawl",
+          "Barceloneta Beach"
+        ],
+        "satisfaction_rating": 5,
+        "token_usage": 1180,
+        "latency_ms": 780,
+        "timestamp": "2024-09-18T16:45:00Z",
+        "similarity_score": 0.6000000000000001
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Pune",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
+        "flight_summary": "As your expert flight booking specialist, I've carefully reviewed your past travel experiences and current request. Your discerning taste for art, local cuisine, boutique hotels, and romantic atmosphe...",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [
+          "Welcome to Pune! Given your discerning taste for art, local cuisine, boutique experiences, and a rom"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1278,
+        "latency_ms": 35860,
+        "timestamp": "2025-11-26T00:32:00.235708",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Pune",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "sushi, traditional temples, technology districts, anime culture",
+        "flight_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 863,
+        "latency_ms": 35092,
+        "timestamp": "2025-11-26T00:36:34.396965",
+        "similarity_score": 0.4
+      }
+    ],
+    "pune_art_museums,_cafes,_romantic_walks": [
+      {
+        "id": "trip_user_001_4",
+        "destination": "Pune",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
+        "flight_summary": "As your expert flight booking specialist, I've carefully reviewed your past travel experiences and current request. Your discerning taste for art, local cuisine, boutique hotels, and romantic atmosphe...",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [
+          "Welcome to Pune! Given your discerning taste for art, local cuisine, boutique experiences, and a rom"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1278,
+        "latency_ms": 35860,
+        "timestamp": "2025-11-26T00:32:00.235708",
+        "similarity_score": 0.52
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Paris, France",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, cafes, romantic walks",
+        "flight_summary": "This is an excellent time to book for a March 2025 trip to Paris. March is the beginning of the shoulder season, offering fewer crowds than summer but still requiring strategic booking to secure the b...",
+        "hotel_summary": "This is an excellent request. Based on your highly successful past trip to Le Marais, which emphasized boutique charm, art, and romance, I have curated a list of hotels in neighborhoods that perfectly...",
+        "itinerary_highlights": [
+          "This itinerary is designed specifically for travelers who appreciate high culture, intimate artistic"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 3633,
+        "latency_ms": 41147,
+        "timestamp": "2025-11-25T20:27:08.257554",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Paris, France",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, cafes, romantic walks",
+        "flight_summary": "Based on your successful past booking strategy and the excellent timing for a March 2025 trip, now is indeed the **prime window** to secure the best flights for your Paris adventure! March offers the ...",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 1312,
+        "latency_ms": 40414,
+        "timestamp": "2025-11-26T00:08:40.138916",
+        "similarity_score": 0.4
+      }
+    ],
+    "hyd_art_museums,_cafes,_romantic_walks": [
+      {
+        "id": "trip_user_001_4",
+        "destination": "Paris, France",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, cafes, romantic walks",
+        "flight_summary": "Excellent choice for your Parisian getaway! As highlighted in the successful past trip, **March 2025 is indeed an excellent time to visit Paris.** It marks the beginning of the shoulder season, offeri...",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [
+          "Here is a personalized 6-day itinerary for your romantic trip to Paris, focusing on art museums, cha"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1769,
+        "latency_ms": 33562,
+        "timestamp": "2025-11-26T00:21:48.143766",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Pune",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, cafes, romantic walks",
+        "flight_summary": "It's excellent that you're giving Pune another chance! I note the previous trip to Pune received a 0/5 rating, and my aim is to ensure your travel experience this time is seamless and enjoyable, setti...",
+        "hotel_summary": "Hello! As your expert hotel booking specialist, I understand the importance of getting your Pune trip just right, especially given your past experiences. Your consistent interest in art museums, cafes...",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 1781,
+        "latency_ms": 41443,
+        "timestamp": "2025-11-26T00:45:10.504975",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Pune",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, cafes, romantic walks",
+        "flight_summary": "Thank you for reaching out! I'm an expert in flight bookings and can certainly help you plan your trip to Pune for March 15-20, 2025.\n\nFirst, I want to address something very important: I notice your ...",
+        "hotel_summary": "Welcome back to Pune! I understand your previous experience didn't quite hit the mark, but with your refined preferences for art museums, cafes, romantic walks, and boutique hotels, I'm confident we c...",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 2133,
+        "latency_ms": 39682,
+        "timestamp": "2025-11-26T00:48:55.812164",
+        "similarity_score": 0.4
+      }
+    ],
+    "hyderabad_art_museums,_cafes,_romantic_walks": [
+      {
+        "id": "trip_user_001_4",
+        "destination": "Paris, France",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, cafes, romantic walks",
+        "flight_summary": "As your expert flight booking specialist, I've analyzed your request for Paris, France from March 15-20, 2025, with preferences for art museums, cafes, and romantic walks. Building on the success of t...",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 1567,
+        "latency_ms": 34354,
+        "timestamp": "2025-11-26T00:12:43.273603",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Paris, France",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, cafes, romantic walks",
+        "flight_summary": "Excellent choice for your Parisian getaway! As highlighted in the successful past trip, **March 2025 is indeed an excellent time to visit Paris.** It marks the beginning of the shoulder season, offeri...",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [
+          "Here is a personalized 6-day itinerary for your romantic trip to Paris, focusing on art museums, cha"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1769,
+        "latency_ms": 33562,
+        "timestamp": "2025-11-26T00:21:48.143766",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Pune",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, cafes, romantic walks",
+        "flight_summary": "It's excellent that you're giving Pune another chance! I note the previous trip to Pune received a 0/5 rating, and my aim is to ensure your travel experience this time is seamless and enjoyable, setti...",
+        "hotel_summary": "Hello! As your expert hotel booking specialist, I understand the importance of getting your Pune trip just right, especially given your past experiences. Your consistent interest in art museums, cafes...",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 1781,
+        "latency_ms": 41443,
+        "timestamp": "2025-11-26T00:45:10.504975",
+        "similarity_score": 0.4
+      }
+    ],
+    "karimanagar_art_museums,_local_cuisine,_boutique": [
+      {
+        "id": "trip_user_001_4",
+        "destination": "Mumbai",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
+        "flight_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "hotel_summary": "It seems there was a misunderstanding regarding your \"successful\" past trip, as the user rating was 0/5 and the hotel information was blocked. My apologies for that inconvenience. Let's ensure this tr...",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 1246,
+        "latency_ms": 33612,
+        "timestamp": "2025-11-26T00:29:14.822713",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Mumbai",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
+        "flight_summary": "As your expert flight booking specialist, I understand the nuances of long-haul travel, especially to a vibrant city like Mumbai, and how to align flight choices with your desired experience. Given yo...",
+        "hotel_summary": "Welcome back to Mumbai! Given your exquisite taste for art, local flavors, boutique charm, and a romantic atmosphere, I've curated a selection of hotels that perfectly align with your preferences for ...",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 1730,
+        "latency_ms": 33268,
+        "timestamp": "2025-11-26T00:30:28.158369",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Pune",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
+        "flight_summary": "As your expert flight booking specialist, I've carefully reviewed your past travel experiences and current request. Your discerning taste for art, local cuisine, boutique hotels, and romantic atmosphe...",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [
+          "Welcome to Pune! Given your discerning taste for art, local cuisine, boutique experiences, and a rom"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1278,
+        "latency_ms": 35860,
+        "timestamp": "2025-11-26T00:32:00.235708",
+        "similarity_score": 0.4
+      }
+    ],
+    "hyderabad_art_museums,_local_cuisine,_boutique": [
+      {
+        "id": "trip_user_001_4",
+        "destination": "Hyderabad",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, cafes, romantic walks",
+        "flight_summary": "As an expert flight booking specialist, I've analyzed your preferences for art museums, cafes, and romantic walks, noting your past (aspirational?) trips to Paris and Pune. Hyderabad offers a unique b...",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 1686,
+        "latency_ms": 34790,
+        "timestamp": "2025-11-26T00:49:20.904433",
+        "similarity_score": 0.52
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Hyderabad",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, cafes, romantic walks",
+        "flight_summary": "As an expert flight booking specialist, I've analyzed your past travel interests (art museums, cafes, romantic walks in Paris and Pune) and your upcoming request for Hyderabad from March 15-20, 2025. ...",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 1500,
+        "latency_ms": 41668,
+        "timestamp": "2025-11-26T00:50:47.964185",
+        "similarity_score": 0.52
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Mumbai",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
+        "flight_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 800,
+        "latency_ms": 39985,
+        "timestamp": "2025-11-26T00:27:49.864486",
+        "similarity_score": 0.4
+      }
+    ],
+    "delhi_art_museums,_local_cuisine,_boutique": [
+      {
+        "id": "trip_user_001_4",
+        "destination": "Mumbai",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
+        "flight_summary": "As your expert flight booking specialist, I understand the nuances of long-haul travel, especially to a vibrant city like Mumbai, and how to align flight choices with your desired experience. Given yo...",
+        "hotel_summary": "Welcome back to Mumbai! Given your exquisite taste for art, local flavors, boutique charm, and a romantic atmosphere, I've curated a selection of hotels that perfectly align with your preferences for ...",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 1730,
+        "latency_ms": 33268,
+        "timestamp": "2025-11-26T00:30:28.158369",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Pune",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
+        "flight_summary": "As your expert flight booking specialist, I've carefully reviewed your past travel experiences and current request. Your discerning taste for art, local cuisine, boutique hotels, and romantic atmosphe...",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [
+          "Welcome to Pune! Given your discerning taste for art, local cuisine, boutique experiences, and a rom"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1278,
+        "latency_ms": 35860,
+        "timestamp": "2025-11-26T00:32:00.235708",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_user_001_4",
+        "destination": "Hyderabad",
+        "travel_dates": "March 15-20, 2025",
+        "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
+        "flight_summary": "As an expert flight booking specialist, I've noted your consistent 0/5 ratings for past trips to Hyderabad and Mumbai, despite your interest in art, cuisine, boutique hotels, and romantic atmospheres....",
+        "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
+        "itinerary_highlights": [],
+        "satisfaction_rating": 0,
+        "token_usage": 1205,
+        "latency_ms": 35226,
+        "timestamp": "2025-11-26T01:06:01.684350",
+        "similarity_score": 0.4
+      }
+    ]
+  },
+  "cache_order": [
+    "pune_gaudi_architecture,_tapas_bars,_beaches,",
+    "pune_art_museums,_cafes,_romantic_walks",
+    "hyd_art_museums,_cafes,_romantic_walks",
+    "hyderabad_art_museums,_cafes,_romantic_walks",
+    "karimanagar_art_museums,_local_cuisine,_boutique",
+    "hyderabad_art_museums,_local_cuisine,_boutique",
+    "delhi_art_museums,_local_cuisine,_boutique"
+  ],
+  "stats": {
+    "pune_gaudi_architecture,_tapas_bars,_beaches,": {
+      "usage_count": 4,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-11-26T00:42:28.485682",
+      "last_used": "2025-11-26T00:42:28.489034"
+    },
+    "pune_art_museums,_cafes,_romantic_walks": {
+      "usage_count": 34,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-11-26T00:42:46.824379",
+      "last_used": "2025-11-26T00:48:41.878009"
+    },
+    "hyderabad_art_museums,_cafes,_romantic_walks": {
+      "usage_count": 10,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-11-26T00:49:08.464742",
+      "last_used": "2025-11-26T00:50:32.903251"
+    },
+    "hyd_art_museums,_cafes,_romantic_walks": {
+      "usage_count": 10,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-11-26T00:49:40.703735",
+      "last_used": "2025-11-26T00:49:43.473554"
+    },
+    "hyderabad_art_museums,_local_cuisine,_boutique": {
+      "usage_count": 72,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-11-26T00:54:08.342740",
+      "last_used": "2025-11-26T01:10:38.534389"
+    },
+    "karimanagar_art_museums,_local_cuisine,_boutique": {
+      "usage_count": 16,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-11-26T01:06:56.745410",
+      "last_used": "2025-11-26T01:10:28.651401"
+    },
+    "delhi_art_museums,_local_cuisine,_boutique": {
+      "usage_count": 22,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-11-26T01:10:45.384305",
+      "last_used": "2025-11-26T01:11:21.314727"
+    }
+  },
+  "last_updated": "2025-11-26T01:11:21.314741"
+}

@@ -19,16 +19,11 @@ class Settings(BaseSettings):
     google_api_key: str  # Required - will fail if not set
 
     # Gemini Model Configuration
-    # For langchain-google-genai 2.0.10, use 'models/' prefix (required for v1beta API)
-    gemini_flash_model: str = "gemini-flash-latest"
-    gemini_pro_model: str = "gemini-pro-latest"
+    gemini_flash_model: str = "gemini-2.5-flash"  # Latest stable Flash model
 
     # Model Parameters
-    model_temperature: float = (
-        0.3  # Controls randomness (0.0-1.0, lower = more focused)
-    )
-    flash_max_tokens: int = 2048  # Max output tokens for Flash model
-    pro_max_tokens: int = 4096  # Max output tokens for Pro model
+    model_temperature: float = 0.7  # Controls randomness (0.0-1.0)
+    max_output_tokens: int = 2048  # Max output tokens
 
     # API Server Configuration
     api_host: str = "0.0.0.0"
@@ -43,13 +38,9 @@ class Settings(BaseSettings):
         env_file=".env", env_file_encoding="utf-8", case_sensitive=False, extra="ignore"
     )
 
-    def get_flash_model_name(self) -> str:
-        """Get the Gemini Flash model name."""
+    def get_model_name(self) -> str:
+        """Get the Gemini model name."""
         return self.gemini_flash_model
-
-    def get_pro_model_name(self) -> str:
-        """Get the Gemini Pro model name."""
-        return self.gemini_pro_model
 
 
 # Global settings instance - import this in other modules

@@ -1,35 +1,56 @@
-# Travel Assistant API - Python Dependencies
-# Generated: November 24, 2025
+# Generative AI Travel Assistant - Python Dependencies
+# Author: Chitti Vijay
+# Date: November 26, 2025
 # Python Version: 3.13+
+# Assignment: Generative AI Travel Assistant with LangChain Prompt Templates
 
-# Core Web Framework
+# ============================================================================
+# CORE WEB FRAMEWORK
+# ============================================================================
 fastapi>=0.115.6                    # Modern, high-performance web framework with auto-docs
-uvicorn[standard]>=0.34.0           # ASGI server with WebSocket support
+uvicorn[standard]>=0.34.0           # ASGI server with WebSocket support and auto-reload
+aiofiles>=25.1.0                    # Async file I/O for non-blocking operations
 
-# LangChain & AI Integration
-langchain>=0.3.17                   # LLM orchestration framework
-langchain-google-genai>=2.0.10      # Google Gemini integration for LangChain
-google-generativeai>=0.8.4          # Google Generative AI SDK
+# ============================================================================
+# LANGCHAIN & AI INTEGRATION (Task 1 & 2)
+# ============================================================================
+langchain>=0.3.17                   # LLM orchestration framework for prompt templates
+langchain-core>=0.3.0               # LangChain core components (PromptTemplate)
+langchain-google-genai>=2.0.10      # Google Gemini integration for LangChain (legacy)
+google-generativeai>=0.8.4          # Google Generative AI SDK (native - primary)
 
-# Configuration & Environment
+# ============================================================================
+# TOKEN COUNTING & OPTIMIZATION (Task 4)
+# ============================================================================
+tiktoken>=0.8.0                     # Token counting for optimization tracking
+
+# ============================================================================
+# CONFIGURATION & VALIDATION
+# ============================================================================
 python-dotenv>=1.2.1                # Environment variable management from .env files
 pydantic>=2.10.4                    # Data validation using Python type annotations
 pydantic-settings>=2.7.1            # Settings management with Pydantic
 
-# Testing
+# ============================================================================
+# TESTING
+# ============================================================================
 pytest>=8.3.4                       # Testing framework
-httpx>=0.28.2                       # Async HTTP client for testing FastAPI
+httpx>=0.27.0                       # Async HTTP client for testing FastAPI
 
-# Development & Analysis (Optional)
-ipykernel>=7.1.0                    # Jupyter kernel for interactive development
-numpy>=2.3.5                        # Numerical computing
-pandas>=2.3.3                       # Data analysis and manipulation
+# ============================================================================
+# DEVELOPMENT TOOLS (Optional)
+# ============================================================================
+ipykernel>=6.29.0                   # Jupyter kernel for interactive development
 requests>=2.32.5                    # HTTP library for API calls
 
-# Additional Utilities
-asyncio                             # Built-in: Async programming support
-typing                              # Built-in: Type hints support
-json                                # Built-in: JSON parsing
-logging                             # Built-in: Logging functionality
-time                                # Built-in: Time measurement for latency
-re                                  # Built-in: Regular expressions for parsing
+# ============================================================================
+# BUILT-IN MODULES (No installation needed)
+# ============================================================================
+# asyncio - Asynchronous I/O for parallel processing
+# json - User history storage and response formatting
+# typing - Type hints for code clarity
+# logging - Structured logging system
+# time - Latency measurement
+# re - Regex for response parsing
+# datetime - Timestamp generation
+# pathlib - File path handling

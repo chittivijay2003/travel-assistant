@@ -2,7 +2,7 @@
 
 **Version**: 1.0.0  
 **Author**: Chitti Vijay  
-**Last Updated**: November 24, 2025
+**Last Updated**: November 26, 2025
 
 ---
 
@@ -70,35 +70,53 @@ app = FastAPI(
 ### AI/ML Layer
 
 #### **LangChain** (v0.3.17+)
-- **Purpose**: LLM orchestration framework
+- **Purpose**: Prompt template framework
 - **Why**: 
-  - Standardized interface for multiple LLM providers
-  - Built-in prompt templates
-  - Easy model switching
-  - Async support
-- **Usage**: Manages interactions with Google Gemini models
+  - Structured prompt engineering with PromptTemplate
+  - Dynamic variable injection
+  - Reusable prompt structures
+  - Clear separation of template and data
+- **Usage**: PromptTemplate for flight, hotel, and itinerary prompts (Task 1)
 
 ```python
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.prompts import PromptTemplate
 
-flash_model = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash-latest",
-    google_api_key=settings.google_api_key,
-    max_output_tokens=2048,
-    temperature=0.3
+flight_search_prompt = PromptTemplate(
+    input_variables=["destination", "travel_dates", "preferences", "few_shot_examples"],
+    template=FLIGHT_SEARCH_TEMPLATE
 )
 ```
 
-#### **Google Gemini AI** (via langchain-google-genai v2.0.10+)
+#### **Google Gemini AI** (via google-generativeai v0.8.4+)
 - **Purpose**: Large Language Models for content generation
 - **Why**: 
   - High-quality natural language generation
-  - Two model variants (Flash for speed, Pro for quality)
+  - Latest model support (gemini-2.5-flash)
+  - Direct API access without wrapper overhead
+  - Fine-grained safety control
   - Cost-effective
   - Google Cloud infrastructure
-- **Models Used**:
-  - `gemini-1.5-flash-latest`: Fast responses (1-2s), 2048 tokens
-  - `gemini-1.5-pro-latest`: Detailed responses (3-5s), 4096 tokens
+- **Model Used**:
+  - `gemini-2.5-flash`: Latest stable model with optimal speed/quality balance
+
+```python
+import google.generativeai as genai
+from google.generativeai.types import HarmCategory, HarmBlockThreshold
+
+genai.configure(api_key=settings.google_api_key)
+
+flash_model = genai.GenerativeModel(
+    "gemini-2.5-flash",
+    generation_config={
+        "temperature": 0.7,
+        "max_output_tokens": 2048,
+    },
+    safety_settings={
+        HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+        # ... other categories
+    }
+)
+```
 
 ### Data Validation
 
@@ -208,9 +226,9 @@ settings = get_settings()  # Singleton instance
 - Centralizes model initialization logic
 
 ```python
-def get_flash_model() -> ChatGoogleGenerativeAI:
-    """Factory function for Flash model"""
-    return ChatGoogleGenerativeAI(...)
+def get_flash_model() -> genai.GenerativeModel:
+    """Factory function for Flash model (gemini-2.5-flash)"""
+    return genai.GenerativeModel("gemini-2.5-flash", ...)
 ```
 
 #### **Strategy Pattern**
@@ -227,49 +245,57 @@ def get_flash_model() -> ChatGoogleGenerativeAI:
 
 ### 1. Gemini Client Service (`app/services/gemini_client.py`)
 
-**Purpose**: Manages Google Gemini AI model instances
+**Purpose**: Manages Google Gemini AI model instance
 
-**Framework**: LangChain (`langchain-google-genai`)
+**Framework**: Native Google Generative AI SDK (`google-generativeai`)
 
 **Logic**:
-1. Initialize two separate model instances (Flash and Pro)
-2. Configure model parameters (temperature, tokens, API key)
-3. Provide factory functions for model access
+1. Initialize Gemini Flash model with native SDK
+2. Configure model parameters (temperature, max tokens, safety settings)
+3. Provide factory function for model access with caching
 
 **Functions**:
 
 ```python
-def get_flash_model() -> ChatGoogleGenerativeAI:
+@lru_cache(maxsize=1)
+def get_flash_model() -> genai.GenerativeModel:
     """
-    Factory function to create Gemini Flash model instance
+    Factory function to create Gemini Flash model instance (cached)
     
     Returns:
-        ChatGoogleGenerativeAI: Configured Flash model
+        genai.GenerativeModel: Configured Flash model
         
     Configuration:
-        - Model: gemini-1.5-flash-latest
-        - Max Tokens: 2048
-        - Temperature: 0.3 (balanced creativity)
+        - Model: gemini-2.5-flash (latest stable)
+        - Max Tokens: 2048 (from settings)
+        - Temperature: 0.7 (from settings)
+        - Safety: BLOCK_NONE for all categories
     """
+    genai.configure(api_key=settings.google_api_key)
     
-def get_pro_model() -> ChatGoogleGenerativeAI:
-    """
-    Factory function to create Gemini Pro model instance
+    safety_settings = {
+        HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+    }
     
-    Returns:
-        ChatGoogleGenerativeAI: Configured Pro model
-        
-    Configuration:
-        - Model: gemini-1.5-pro-latest
-        - Max Tokens: 4096
-        - Temperature: 0.3 (balanced creativity)
-    """
+    return genai.GenerativeModel(
+        "gemini-2.5-flash",
+        generation_config={
+            "temperature": settings.model_temperature,
+            "max_output_tokens": settings.max_output_tokens,
+        },
+        safety_settings=safety_settings,
+    )
 ```
 
 **Implementation Details**:
-- Models are created on-demand (lazy initialization)
+- Model is created with lazy initialization and LRU caching
 - API key loaded from environment via Pydantic Settings
-- Temperature set to 0.3 for consistent, focused responses
+- Temperature set from config (default 0.7) for balanced creativity
+- Safety settings set to BLOCK_NONE to minimize false positives
+- Fallback responses provided when safety filters trigger
 - Different token limits optimize for speed vs. detail
 
 ---
@@ -372,33 +398,33 @@ async def generate_travel_plan(request: TravelRequest) -> dict:
 
 **Code**:
 ```python
-async def call_model_with_latency(
-    model: ChatGoogleGenerativeAI, 
+async def call_prompt_with_metrics(
+    model: genai.GenerativeModel, 
     prompt: str, 
-    model_name: str
-) -> dict:
+    prompt_name: str
+) -> Tuple[str, Dict]:
     """
-    Call LLM model and measure response time
+    Call Gemini model and measure response time with token tracking
     
     Args:
-        model: LangChain ChatGoogleGenerativeAI instance
+        model: Google GenerativeModel instance (gemini-2.5-flash)
         prompt: Input prompt string
-        model_name: Model identifier for logging
+        prompt_name: Prompt identifier for logging
         
     Returns:
-        dict: {
-            "response": str,
-            "latency_ms": float
-        }
+        tuple: (
+            response_text: str,
+            metrics: dict with tokens and latency
+        )
     """
     logger = get_logger("travel_service")
     
     start_time = time.time()
     
     try:
-        # Async invocation
-        response = await model.ainvoke(prompt)
-        content = response.content
+        # Native SDK invocation
+        response = model.generate_content(prompt)
+        content = response.text
         
         # Calculate latency
         latency = (time.time() - start_time) * 1000
@@ -688,37 +714,49 @@ def get_request_id() -> str:
 **Example Response**:
 ```json
 {
-  "request": {
-    "destination": "Paris, France",
-    "travel_dates": "December 15-20, 2025",
-    "preferences": "Art museums, French cuisine, romantic walks"
+  "flight_recommendations": "Based on your travel dates and preferences...",
+  "hotel_recommendations": "Recommended hotels in Paris...",
+  "itinerary": "Day 1: Arrive in Paris, visit Eiffel Tower...",
+  "scenario_outputs": {
+    "scenario_1_no_history": {
+      "flight": "...",
+      "hotel": "...",
+      "itinerary": "...",
+      "total_tokens": 1007,
+      "latency_ms": 33412
+    },
+    "scenario_2_all_history": {
+      "flight": "...",
+      "hotel": "...",
+      "itinerary": "...",
+      "total_tokens": 1815,
+      "latency_ms": 34255
+    },
+    "scenario_3_smart_history": {
+      "flight": "...",
+      "hotel": "...",
+      "itinerary": "...",
+      "total_tokens": 1161,
+      "latency_ms": 34686
+    }
   },
-  "flash": {
-    "model": "gemini-1.5-flash-latest",
-    "latency_ms": 1234.56,
-    "itinerary": "Day 1: Arrive in Paris, visit Eiffel Tower...",
-    "highlights": "Louvre Museum, Notre-Dame Cathedral, Seine River cruise...",
-    "raw_response": "Full AI-generated text..."
+  "token_metrics": {
+    "total_tokens": 1161,
+    "baseline_tokens": 1815,
+    "tokens_saved": 654,
+    "savings_percentage": 36.03
   },
-  "pro": {
-    "model": "gemini-1.5-pro-latest",
-    "latency_ms": 3456.78,
-    "itinerary": "Day 1: Begin your Parisian adventure with...",
-    "highlights": "Must-visit: Louvre Museum (Mona Lisa)...",
-    "raw_response": "Full AI-generated text..."
+  "quality_metrics": {
+    "cache_hit": true,
+    "few_shot_examples_used": 3,
+    "avg_similarity": 0.8,
+    "ranking_info": {
+      "flight": { "ranking_info": {...}, "cache_hit": true },
+      "hotel": { "ranking_info": {...}, "cache_hit": true },
+      "itinerary": { "ranking_info": {...}, "cache_hit": true }
+    }
   },
-  "comparison": {
-    "summary": "Flash: 1500 chars, Pro: 2800 chars, Ratio: 1.87x",
-    "flash_strengths": [
-      "Faster response time",
-      "Concise and actionable"
-    ],
-    "pro_strengths": [
-      "More comprehensive details",
-      "Deeper cultural insights"
-    ],
-    "recommended_plan": "Pro model for comprehensive planning"
-  }
+  "total_latency_ms": 34686
 }
 ```
 
@@ -1067,16 +1105,14 @@ class Settings(BaseSettings):
     
     Validation:
     - google_api_key: Required, must be non-empty
-    - Model names: Optional with defaults
+    - Model name: gemini-2.5-flash
     - Temperature: Float between 0.0 and 1.0
     - Token limits: Positive integers
     """
     google_api_key: str
-    gemini_flash_model: str = "gemini-1.5-flash-latest"
-    gemini_pro_model: str = "gemini-1.5-pro-latest"
-    model_temperature: float = 0.3
-    flash_max_tokens: int = 2048
-    pro_max_tokens: int = 4096
+    gemini_model: str = "gemini-2.5-flash"
+    model_temperature: float = 0.7
+    max_output_tokens: int = 2048
     
     model_config = SettingsConfigDict(
         env_file=".env",
