@@ -7,21 +7,6 @@
           "id": "trip_user_001_4",
           "destination": "Pune",
           "travel_dates": "March 15-20, 2025",
-          "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
-          "flight_summary": "As your expert flight booking specialist, I've carefully reviewed your past travel experiences and current request. Your discerning taste for art, local cuisine, boutique hotels, and romantic atmosphe...",
-          "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
-          "itinerary_highlights": [
-            "Welcome to Pune! Given your discerning taste for art, local cuisine, boutique experiences, and a rom"
-          ],
-          "satisfaction_rating": 0,
-          "token_usage": 1278,
-          "latency_ms": 35860,
-          "timestamp": "2025-11-26T00:32:00.235708"
-        },
-        {
-          "id": "trip_user_001_4",
-          "destination": "Pune",
-          "travel_dates": "March 15-20, 2025",
           "preferences": "sushi, traditional temples, technology districts, anime culture",
           "flight_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
           "hotel_summary": "[Response blocked due to safety filters. Please rephrase your request.]",
@@ -136,6 +121,21 @@
           "token_usage": 1161,
           "latency_ms": 34686,
           "timestamp": "2025-11-26T01:11:33.345164"
+        },
+        {
+          "id": "trip_user_001_4",
+          "destination": "Delhi",
+          "travel_dates": "March 15-20, 2025",
+          "preferences": "art museums, local cuisine, boutique hotels, romantic atmosphere",
+          "flight_summary": "Welcome! I understand completely the frustration of past trips not living up to expectations, especially when your interests are so clearly defined. A \"0/5\" rating despite a desire for art, local cuis...",
+          "hotel_summary": "It's truly a pleasure to assist you with your Delhi trip, especially given your past experiences. The 0/5 ratings from your previous trips to Mumbai, Pune, and Hyderabad are a clear signal that we nee...",
+          "itinerary_highlights": [
+            "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+          ],
+          "satisfaction_rating": 0,
+          "token_usage": 2094,
+          "latency_ms": 42137,
+          "timestamp": "2025-11-26T02:06:52.199880"
         }
       ],
       "historySummary": {
@@ -143,20 +143,20 @@
         "favoriteDestinations": [
           "Pune",
           "Hyderabad",
-          "Karimanagar",
-          "Delhi"
+          "Delhi",
+          "Karimanagar"
         ],
         "preferencePatterns": [
           "art",
           "museums",
           "romantic",
+          "cafes",
+          "walks",
           "local",
           "cuisine",
           "boutique",
           "hotels",
           "atmosphere",
-          "cafes",
-          "walks",
           "sushi",
           "traditional",
           "temples",
@@ -169,13 +169,13 @@
           "tapas"
         ],
         "avgSatisfactionRating": 5.0,
-        "avgTokenUsage": 1318,
-        "avgLatencyMs": 37744,
+        "avgTokenUsage": 1400,
+        "avgLatencyMs": 38372,
         "tripsByContinent": {
           "Europe": 2,
           "Asia": 1
         },
-        "lastUpdated": "2025-11-26T01:11:33.345392"
+        "lastUpdated": "2025-11-26T02:06:52.201375"
       }
     },
     "user_002": {

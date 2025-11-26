@@ -3,7 +3,8 @@
 **Author**: Chitti Vijay  
 **Date**: November 26, 2025  
 **Course**: Python Programming Assignment  
-**Assignment**: Generative AI Travel Assistant with LangChain Prompt Templates & Few-Shot Learning
+**Assignment**: Generative AI Travel Assistant with LangChain Prompt Templates & Few-Shot Learning  
+**Repository**: https://github.com/chittivijay2003/travel-assistant
 
 ---
 
@@ -983,7 +984,8 @@ This project demonstrates mastery of:
 
 **Student**: Chitti Vijay  
 **Assignment**: Generative AI Travel Assistant  
-**Date**: November 25, 2025
+**Date**: November 26, 2025  
+**Repository**: https://github.com/chittivijay2003/travel-assistant
 
 For questions, refer to:
 - `DOCUMENTATION.md` for technical details
