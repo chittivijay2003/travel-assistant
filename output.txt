@@ -1,0 +1,258 @@
+======================================================================
+Test Run: 2025-12-06 15:47:00
+======================================================================
+
+======================================================================
+Travel Assistant API (D2) - Visible Test Suite
+======================================================================
+
+This test validates OpenAPI spec compliance and basic functionality.
+
+
+======================================================================
+Test 1: Standard Trip Request (Paris)
+======================================================================
+Payload: {
+  "destination": "Paris, France",
+  "travel_dates": "June 1 - June 10, 2025",
+  "preferences": "museums and local food"
+}
+Status Code: 200
+
+--- Response Metrics ---
+Token Usage: 1429
+Latency: 40158 ms
+
+--- LLM Generated Content ---
+
+Flight Recommendations:
+Given your previous trip to Paris rated 0/5, my primary focus will be on ensuring a drastically improved and stress-free travel experience this time. The goal is to make the journey itself comfortable and efficient, allowing you to fully enjoy the museums and local cuisine without any travel-related frustrations.
+
+**Crucial Clarification Needed:** To provide the most accurate recommendations and pricing, I need to know your **departure city in the US**. For the purpose of this recommendation, I will assume a departure from a **major East Coast hub like New York (JFK/EWR)**, as these typically offer the most direct options and competitive pricing to Paris. Please note that prices will vary significantly based on your actual departure airport.
+
+---
+
+### **Understanding Your Previous 0/5 Experience**
+
+While I don't know the exact reasons for your past negative experience, I will assume it was related to aspects of the flight or travel day itself (e.g., delays, uncomfortable seats, poor service, difficult connections, lost luggage). Therefore, my recommendations will prioritize:
+
+*   **Reliability and On-Time Performance:** Choosing airlines with good track records.
+*   **Comfort:** Recommending class options that offer more space and amenities.
+*   **Efficiency:** Favoring direct flights to minimize connection risks and travel time.
+*   **Service Quality:** Highlighting airlines known for good customer service.
+
+---
+
+### **Comprehensive Flight Recommendations: Paris (CDG) - June 1 - June 10, 2025**
+
+#### **1. Recommended Airlines and Specific Flight Options**
+
+For travel to Paris, especially from the East Coast, the following airlines are generally excellent choices, offering a balance of service, reliability, and direct routes:
+
+*   **Air France (AF):** The national carrier of France, offering numerous direct flights from major US hubs. Excellent service, good food, and a strong connection to the destination. As a SkyTeam member, it partners closely with Delta.
+*   **Delta Air Lines (DL):** A top-tier US carrier with extensive routes to Paris, often codesharing with Air France. Known for good customer service and on-time performance.
+*   **United Airlines (UA):** Strong presence from its hubs (EWR, IAD, ORD, SFO, LAX) to Paris. A Star Alliance member, often codesharing with Lufthansa.
+*   **American Airlines (AA):** Offers direct flights from its hubs (JFK, PHL, CLT, DFW) to Paris. A Oneworld Alliance member
+
+Hotel Recommendations:
+⚠️ Safety filter triggered for hotel. Providing generic response instead.
+
+Here are hotel recommendations for your destination:
+
+**Booking Strategy:**
+1. **Location**: Stay near public transportation or main attractions
+2. **Read Recent Reviews**: Focus on reviews from the last 3-6 months
+3. **Compare Prices**: Check hotel website, booking sites, and aggregators
+4. **Flexible Cancellation**: Choose refundable options when possible
+5. **Look for Package Deals**: Sometimes flights + hotel is cheaper
+
+**Hotel Search Tips:**
+- Use filters for amenities you need (WiFi, breakfast, parking)
+- Check if loyalty programs offer benefits
+- Book directly with hotel for potential perks
+- Consider alternative accommodations (Airbnb, hostels, boutique hotels)
+- Verify location on map before booking
+
+Itinerary:
+⚠️ Safety filter triggered for itinerary. Providing generic response instead.
+
+Here's a general itinerary planning guide for your destination:
+
+**Planning Your Trip:**
+
+**Day 1-2: Arrival & Orientation**
+- Settle into accommodation
+- Take orientation walking tour
+- Visit nearby attractions
+- Try local cuisine
+
+**Day 3-5: Major Attractions**
+- Visit top-rated museums and landmarks
+- Book skip-the-line tickets in advance
+- Balance busy sightseeing with relaxation
+- Explore local neighborhoods
+
+**Day 6-7: Local Experiences**
+- Visit local markets
+- Take cooking class or cultural workshop
+- Day trip to nearby areas
+- Evening entertainment (shows, concerts)
+
+**General Tips:**
+- Don't over-schedule - leave time for spontaneity
+- Mix popular sites with off-the-beaten-path experiences
+- Consider guided tours for historical context
+- Try local transportation
+- Make restaurant reservations for popular spots
+
+--- End LLM Generated Content ---
+
+--- Metrics Check ---
+Metrics look realistic (tokens=1429, latency=40158ms)
+
+[PASSED]
+
+======================================================================
+Test 2: Short Trip Request (New York)
+======================================================================
+Payload: {
+  "destination": "New York, USA",
+  "travel_dates": "Dec 20 - Dec 22, 2025",
+  "preferences": "Christmas lights and shopping"
+}
+Status Code: 200
+
+--- Response Metrics ---
+Token Usage: 1566
+Latency: 32668 ms
+
+--- LLM Generated Content ---
+
+Flight Recommendations:
+Welcome back! It's excellent that you're looking to revisit New York City for the magical Christmas season, especially given your past successful trip with the exact same dates and preferences. December 20-22, 2025 is an absolutely prime time for Christmas lights and shopping, meaning demand will be exceptionally high. As your expert flight booking specialist, I'll leverage our past experience to provide you with the most actionable and comprehensive recommendations.
+
+Given the short duration of your trip (Friday to Sunday) and the specific desire to maximize time for Christmas lights and shopping, every minute counts.
+
+---
+
+### **NYC Airports Overview**
+
+New York City is served by three major airports, each with its pros and cons for accessing Manhattan and its festive attractions:
+
+1.  **John F. Kennedy International Airport (JFK):**
+    *   **Pros:** Major international hub, excellent airline variety, generally good public transport options (AirTrain to LIRR/Subway).
+    *   **Cons:** Farthest from Manhattan, transfer time can be 60-90 minutes, can be prone to delays.
+2.  **Newark Liberty International Airport (EWR):**
+    *   **Pros:** Major hub (especially for United), good public transport (AirTrain to NJ Transit to Penn Station), often quicker to Midtown Manhattan than JFK.
+    *   **Cons:** Located in New Jersey, can sometimes have slightly higher taxi/ride-share costs due to tolls, but often a good alternative to JFK.
+3.  **LaGuardia Airport (LGA):**
+    *   **Pros:** Closest to Manhattan, recent significant renovations, good for domestic flights.
+    *   **Cons:** No direct rail link (bus/taxi/ride-share only), can experience heavy traffic, fewer long-haul domestic/international flights. Often preferred for shorter domestic hops.
+
+**Recommendation:** For your short, high-priority trip, **LGA or EWR** might offer slightly quicker access to Midtown/Manhattan where many Christmas attractions are located. However, **JFK** often has the most flight options. Consider your final accommodation location when making your airport choice.
+
+---
+
+### **Recommended Airlines & Specific Flight Options**
+
+For these peak dates, major legacy carriers generally offer the most reliable scheduling and service. Budget airlines can be an option, but be mindful of their add-on fees.
+
+**Top Airline Recommendations (assuming domestic US departure):**
+
+*   **Delta Airlines (JFK, LGA):** Strong presence, good service, often good flight times.
+*   **United Airlines (EWR):** Dominant at Newark, excellent for those flying from United hubs.
+*   **American Airlines (JFK, LGA):
+
+Hotel Recommendations:
+It sounds like your previous trip to New York City for Christmas lights and shopping didn't quite hit the mark, which is a real shame given the magic of the city during that time! A 0/5 rating suggests significant issues, likely related to location, comfort, or simply being overwhelmed. My goal is to completely redeem that experience for you with carefully selected recommendations that prioritize convenience, comfort, and the ultimate festive atmosphere.
+
+December 20-22, 2025, is prime time for Christmas in NYC, meaning high demand and higher prices. Booking as early as possible is crucial to secure the best rates and availability.
+
+Here are my top hotel recommendations, designed to immerse you in the Christmas spirit and provide easy access to the best shopping, all while ensuring a comfortable and memorable stay:
+
+---
+
+### **Expert Hotel Recommendations for New York City (Dec 20-22, 2025)**
+
+Given your past experience, these recommendations prioritize prime locations for Christmas lights and shopping, coupled with comfort and excellent service to ensure a truly magical visit
+
+Itinerary:
+⚠️ Safety filter triggered for itinerary. Providing generic response instead.
+
+Here's a general itinerary planning guide for your destination:
+
+**Planning Your Trip:**
+
+**Day 1-2: Arrival & Orientation**
+- Settle into accommodation
+- Take orientation walking tour
+- Visit nearby attractions
+- Try local cuisine
+
+**Day 3-5: Major Attractions**
+- Visit top-rated museums and landmarks
+- Book skip-the-line tickets in advance
+- Balance busy sightseeing with relaxation
+- Explore local neighborhoods
+
+**Day 6-7: Local Experiences**
+- Visit local markets
+- Take cooking class or cultural workshop
+- Day trip to nearby areas
+- Evening entertainment (shows, concerts)
+
+**General Tips:**
+- Don't over-schedule - leave time for spontaneity
+- Mix popular sites with off-the-beaten-path experiences
+- Consider guided tours for historical context
+- Try local transportation
+- Make restaurant reservations for popular spots
+
+--- End LLM Generated Content ---
+
+--- Metrics Check ---
+Metrics look realistic (tokens=1566, latency=32668ms)
+
+[PASSED]
+
+======================================================================
+Test 3: Missing Field (Should Return 422)
+======================================================================
+Payload: {
+  "destination": "London, UK",
+  "travel_dates": "Aug 1 - Aug 5, 2025"
+}
+Status Code: 422
+
+--- Validation Error Details ---
+{
+  "detail": [
+    {
+      "type": "missing",
+      "loc": [
+        "body",
+        "preferences"
+      ],
+      "msg": "Field required",
+      "input": {
+        "destination": "London, UK",
+        "travel_dates": "Aug 1 - Aug 5, 2025"
+      }
+    }
+  ]
+}
+
+[PASSED] Validation error as expected
+
+======================================================================
+FINAL RESULTS
+======================================================================
+Tests Passed: 3/3
+
+--- Test Breakdown ---
+  ✓ Test 1: Valid response with proper structure
+  ✓ Test 2: Valid response with proper structure
+  ✓ Test 3: Correctly rejected invalid input
+
+======================================================================
+ALL TESTS PASSED!

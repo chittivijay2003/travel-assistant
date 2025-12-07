@@ -619,6 +619,39 @@ async def process_travel_request_new(request: TravelRequest) -> TravelAssistantR
     total_output_tokens = s3_output
     total_tokens = s3_total
 
+    # Get prompt templates and few-shot examples for the response
+    from app.services.prompt_templates import (
+        FLIGHT_SEARCH_TEMPLATE,
+        HOTEL_RECOMMENDATIONS_TEMPLATE,
+        ITINERARY_PLANNING_TEMPLATE,
+    )
+    
+    few_shot_selector = get_few_shot_selector()
+    
+    # Get few-shot examples used (from smart selection)
+    flight_examples_text, flight_sim, flight_meta = await few_shot_selector.get_examples_for_flight(
+        request.destination, request.preferences, request.user_id
+    )
+    hotel_examples_text, hotel_sim, hotel_meta = await few_shot_selector.get_examples_for_hotel(
+        request.destination, request.preferences, request.user_id
+    )
+    itinerary_examples_text, itinerary_sim, itinerary_meta = await few_shot_selector.get_examples_for_itinerary(
+        request.destination, request.preferences, request.user_id
+    )
+    
+    # Format few-shot examples as stringified JSON for the response
+    few_shot_examples = []
+    if flight_examples_text and flight_examples_text.strip():
+        few_shot_examples.append(json.dumps({"type": "flight", "content": flight_examples_text}))
+    if hotel_examples_text and hotel_examples_text.strip():
+        few_shot_examples.append(json.dumps({"type": "hotel", "content": hotel_examples_text}))
+    if itinerary_examples_text and itinerary_examples_text.strip():
+        few_shot_examples.append(json.dumps({"type": "itinerary", "content": itinerary_examples_text}))
+    
+    # If no examples were found, add a placeholder
+    if not few_shot_examples:
+        few_shot_examples.append(json.dumps({"type": "none", "content": "No previous travel history available"}))
+
     # Calculate costs (Gemini Flash pricing)
     COST_PER_1M_INPUT = 0.075
     COST_PER_1M_OUTPUT = 0.30
@@ -803,18 +836,22 @@ async def process_travel_request_new(request: TravelRequest) -> TravelAssistantR
         latency_ms=total_latency_ms,
     )
 
-    # Build response
+    # Build simplified response
     response = TravelAssistantResponse(
         flight_recommendations=flight_response,
         hotel_recommendations=hotel_response,
         itinerary=itinerary_response,
-        scenario_outputs=scenario_outputs,
-        token_metrics=token_metrics,
-        quality_metrics=quality_metrics,
-        total_latency_ms=total_latency_ms,
+        token_usage=total_tokens,
+        latency_ms=total_latency_ms,
+        prompt_templates={
+            "flight_template": FLIGHT_SEARCH_TEMPLATE,
+            "hotel_template": HOTEL_RECOMMENDATIONS_TEMPLATE,
+            "itinerary_template": ITINERARY_PLANNING_TEMPLATE,
+        },
+        selected_few_shot_examples=few_shot_examples,
     )
 
-    # Track metrics for dashboard
+    # Track metrics for dashboard (keep detailed tracking internally)
     try:
         await metrics_tracker.track_request(
             endpoint="/travel-assistant",
@@ -856,7 +893,7 @@ async def process_travel_request_new(request: TravelRequest) -> TravelAssistantR
         log_error(e, "metrics_tracking", {"user_id": request.user_id})
 
     # Cache the response for future identical requests
-    _response_cache[cache_key] = response.dict()
+    _response_cache[cache_key] = response.model_dump()
     print(f"✅ Cached response for: {request.destination}")
 
     return response

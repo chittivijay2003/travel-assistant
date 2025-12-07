@@ -326,6 +326,646 @@
         "timestamp": "2025-11-26T01:06:01.684350",
         "similarity_score": 0.4
       }
+    ],
+    "hyd, india_cherry_blossoms,_temples,_sushi_restaurants,": [
+      {
+        "id": "trip_default_user_1",
+        "destination": "Tokyo, Japan",
+        "travel_dates": "March 15-25, 2026",
+        "preferences": "cherry blossoms, temples, sushi restaurants, traditional ryokans",
+        "flight_summary": "As an expert flight booking specialist, I'm thrilled to help you plan your trip to Tokyo during the magical cherry blossom season of March 2026. This is a highly sought-after travel period, so strateg...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1232,
+        "latency_ms": 38459,
+        "timestamp": "2025-12-06T14:46:00.995247",
+        "similarity_score": 0.4
+      }
+    ],
+    "tokyo, japan_cherry_blossoms,_temples,_sushi_restaurants,": [
+      {
+        "id": "trip_default_user_1",
+        "destination": "Tokyo, Japan",
+        "travel_dates": "March 15-25, 2026",
+        "preferences": "cherry blossoms, temples, sushi restaurants, traditional ryokans",
+        "flight_summary": "As an expert flight booking specialist, I'm thrilled to help you plan your trip to Tokyo during the magical cherry blossom season of March 2026. This is a highly sought-after travel period, so strateg...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1232,
+        "latency_ms": 38459,
+        "timestamp": "2025-12-06T14:46:00.995247",
+        "similarity_score": 0.8
+      }
+    ],
+    "barcelona, spain_art_museums,_cafes,_eiffel_tower": [
+      {
+        "id": "trip_test_user_1",
+        "destination": "Paris, France",
+        "travel_dates": "June 1-10, 2026",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "\u26a0\ufe0f Safety filter triggered for flight. Providing generic response instead.\n\nBased on your travel plans to your destination, here are general flight recommendations:\n\n**Recommended Approach:**\n1. **Boo...",
+        "hotel_summary": "Bonjour! As your expert hotel booking specialist, I'm thrilled to help you plan your Parisian adventure. Given your interests in art museums, charming cafes, and the iconic Eiffel Tower, along with a ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1720,
+        "latency_ms": 37362,
+        "timestamp": "2025-12-06T15:03:18.754947",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Tokyo, Japan",
+        "travel_dates": "March 15-25, 2026",
+        "preferences": "temples, cherry blossoms, sushi",
+        "flight_summary": "\u26a0\ufe0f Safety filter triggered for flight. Providing generic response instead.\n\nBased on your travel plans to your destination, here are general flight recommendations:\n\n**Recommended Approach:**\n1. **Boo...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1122,
+        "latency_ms": 32148,
+        "timestamp": "2025-12-06T15:04:11.514008",
+        "similarity_score": 0.0
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Rome, Italy",
+        "travel_dates": "July 5-15, 2026",
+        "preferences": "ancient history, pasta, Colosseum",
+        "flight_summary": "Ciao! As your expert flight booking specialist, I'm thrilled to help you plan your trip to Rome, Italy, from July 5-15, 2026. Your preferences for ancient history, pasta, and the Colosseum align perfe...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1471,
+        "latency_ms": 31310,
+        "timestamp": "2025-12-06T15:05:17.427958",
+        "similarity_score": 0.0
+      }
+    ],
+    "india_art_museums,_cafes,_eiffel_tower": [
+      {
+        "id": "trip_test_user_1",
+        "destination": "Paris, France",
+        "travel_dates": "June 1-10, 2026",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "\u26a0\ufe0f Safety filter triggered for flight. Providing generic response instead.\n\nBased on your travel plans to your destination, here are general flight recommendations:\n\n**Recommended Approach:**\n1. **Boo...",
+        "hotel_summary": "Bonjour! As your expert hotel booking specialist, I'm thrilled to help you plan your Parisian adventure. Given your interests in art museums, charming cafes, and the iconic Eiffel Tower, along with a ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1720,
+        "latency_ms": 37362,
+        "timestamp": "2025-12-06T15:03:18.754947",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Barcelona, Spain",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "Welcome! As your expert flight booking specialist, I'm ready to craft the ideal travel plan to Barcelona, focusing on comfort, convenience, and value, especially given your past trip ratings. It sound...",
+        "hotel_summary": "\u00a1Welcome to Barcelona! Given your love for art museums, vibrant cafe culture, and iconic landmarks, Barcelona will be an absolute delight. While there isn't an \"Eiffel Tower\" here, the city boasts stu...",
+        "itinerary_highlights": [
+          "Given your consistent 0/5 ratings on past trips, despite seemingly enjoying art museums, cafes, and "
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1676,
+        "latency_ms": 31891,
+        "timestamp": "2025-12-06T15:06:03.205124",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Barcelona, Spain",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "Alright, let's get you to Barcelona with a *significantly* better experience than your previous trips. A 0/5 rating across Paris, Tokyo, and Rome tells me that the flight experience, in particular, mu...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1537,
+        "latency_ms": 39726,
+        "timestamp": "2025-12-06T15:15:41.130537",
+        "similarity_score": 0.4
+      }
+    ],
+    "hyderabad, india_art_museums,_cafes,_eiffel_tower": [
+      {
+        "id": "trip_test_user_1",
+        "destination": "India",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "As an expert flight booking specialist, I've thoroughly reviewed your past travel preferences and the unique aspects of your request for India next month. The 0/5 ratings for your past trips to Paris ...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1620,
+        "latency_ms": 33967,
+        "timestamp": "2025-12-06T15:23:22.969168",
+        "similarity_score": 0.6000000000000001
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Paris, France",
+        "travel_dates": "June 1-10, 2026",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "\u26a0\ufe0f Safety filter triggered for flight. Providing generic response instead.\n\nBased on your travel plans to your destination, here are general flight recommendations:\n\n**Recommended Approach:**\n1. **Boo...",
+        "hotel_summary": "Bonjour! As your expert hotel booking specialist, I'm thrilled to help you plan your Parisian adventure. Given your interests in art museums, charming cafes, and the iconic Eiffel Tower, along with a ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1720,
+        "latency_ms": 37362,
+        "timestamp": "2025-12-06T15:03:18.754947",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Barcelona, Spain",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "Welcome! As your expert flight booking specialist, I'm ready to craft the ideal travel plan to Barcelona, focusing on comfort, convenience, and value, especially given your past trip ratings. It sound...",
+        "hotel_summary": "\u00a1Welcome to Barcelona! Given your love for art museums, vibrant cafe culture, and iconic landmarks, Barcelona will be an absolute delight. While there isn't an \"Eiffel Tower\" here, the city boasts stu...",
+        "itinerary_highlights": [
+          "Given your consistent 0/5 ratings on past trips, despite seemingly enjoying art museums, cafes, and "
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1676,
+        "latency_ms": 31891,
+        "timestamp": "2025-12-06T15:06:03.205124",
+        "similarity_score": 0.4
+      }
+    ],
+    "india _art_museums,_cafes,_eiffel_tower": [
+      {
+        "id": "trip_test_user_1",
+        "destination": "India",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "As an expert flight booking specialist, I've thoroughly reviewed your past travel preferences and the unique aspects of your request for India next month. The 0/5 ratings for your past trips to Paris ...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1620,
+        "latency_ms": 33967,
+        "timestamp": "2025-12-06T15:23:22.969168",
+        "similarity_score": 0.8
+      }
+    ],
+    "austin, america_art_museums,_cafes,_eiffel_tower": [
+      {
+        "id": "trip_test_user_1",
+        "destination": "Paris, France",
+        "travel_dates": "June 1-10, 2026",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "\u26a0\ufe0f Safety filter triggered for flight. Providing generic response instead.\n\nBased on your travel plans to your destination, here are general flight recommendations:\n\n**Recommended Approach:**\n1. **Boo...",
+        "hotel_summary": "Bonjour! As your expert hotel booking specialist, I'm thrilled to help you plan your Parisian adventure. Given your interests in art museums, charming cafes, and the iconic Eiffel Tower, along with a ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1720,
+        "latency_ms": 37362,
+        "timestamp": "2025-12-06T15:03:18.754947",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Barcelona, Spain",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "Welcome! As your expert flight booking specialist, I'm ready to craft the ideal travel plan to Barcelona, focusing on comfort, convenience, and value, especially given your past trip ratings. It sound...",
+        "hotel_summary": "\u00a1Welcome to Barcelona! Given your love for art museums, vibrant cafe culture, and iconic landmarks, Barcelona will be an absolute delight. While there isn't an \"Eiffel Tower\" here, the city boasts stu...",
+        "itinerary_highlights": [
+          "Given your consistent 0/5 ratings on past trips, despite seemingly enjoying art museums, cafes, and "
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1676,
+        "latency_ms": 31891,
+        "timestamp": "2025-12-06T15:06:03.205124",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Barcelona, Spain",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "Alright, let's get you to Barcelona with a *significantly* better experience than your previous trips. A 0/5 rating across Paris, Tokyo, and Rome tells me that the flight experience, in particular, mu...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1537,
+        "latency_ms": 39726,
+        "timestamp": "2025-12-06T15:15:41.130537",
+        "similarity_score": 0.4
+      }
+    ],
+    "america_art_museums,_cafes,_eiffel_tower": [
+      {
+        "id": "trip_test_user_1",
+        "destination": "Austin, America",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "As an expert flight booking specialist, I'm delighted to help you plan your trip to Austin, America! Your preferences for \"art museums\" and \"cafes\" are a perfect match for Austin's vibrant cultural sc...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1293,
+        "latency_ms": 31299,
+        "timestamp": "2025-12-06T15:26:52.834184",
+        "similarity_score": 0.6000000000000001
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Paris, France",
+        "travel_dates": "June 1-10, 2026",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "\u26a0\ufe0f Safety filter triggered for flight. Providing generic response instead.\n\nBased on your travel plans to your destination, here are general flight recommendations:\n\n**Recommended Approach:**\n1. **Boo...",
+        "hotel_summary": "Bonjour! As your expert hotel booking specialist, I'm thrilled to help you plan your Parisian adventure. Given your interests in art museums, charming cafes, and the iconic Eiffel Tower, along with a ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1720,
+        "latency_ms": 37362,
+        "timestamp": "2025-12-06T15:03:18.754947",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Barcelona, Spain",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "Welcome! As your expert flight booking specialist, I'm ready to craft the ideal travel plan to Barcelona, focusing on comfort, convenience, and value, especially given your past trip ratings. It sound...",
+        "hotel_summary": "\u00a1Welcome to Barcelona! Given your love for art museums, vibrant cafe culture, and iconic landmarks, Barcelona will be an absolute delight. While there isn't an \"Eiffel Tower\" here, the city boasts stu...",
+        "itinerary_highlights": [
+          "Given your consistent 0/5 ratings on past trips, despite seemingly enjoying art museums, cafes, and "
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1676,
+        "latency_ms": 31891,
+        "timestamp": "2025-12-06T15:06:03.205124",
+        "similarity_score": 0.4
+      }
+    ],
+    "london, uk_cherry_blossoms,_temples,_sushi_restaurants,": [
+      {
+        "id": "trip_default_user_1",
+        "destination": "Tokyo, Japan",
+        "travel_dates": "March 15-25, 2026",
+        "preferences": "cherry blossoms, temples, sushi restaurants, traditional ryokans",
+        "flight_summary": "As an expert flight booking specialist, I'm thrilled to help you plan your trip to Tokyo during the magical cherry blossom season of March 2026. This is a highly sought-after travel period, so strateg...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1232,
+        "latency_ms": 38459,
+        "timestamp": "2025-12-06T14:46:00.995247",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_default_user_1",
+        "destination": "Hyd, India",
+        "travel_dates": "March 15-25, 2026",
+        "preferences": "cherry blossoms, temples, sushi restaurants, traditional ryokans",
+        "flight_summary": "As an expert flight booking specialist, I've thoroughly reviewed your",
+        "hotel_summary": "Greetings! As your expert hotel booking specialist, I understand your unique preferences derived from your Tokyo experience. The 0/5 rating from your previous trip is a crucial detail, indicating a ne...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1342,
+        "latency_ms": 33657,
+        "timestamp": "2025-12-06T14:48:33.242992",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_default_user_1",
+        "destination": "Tokyo, Japan",
+        "travel_dates": "March 10-25, 2026",
+        "preferences": "cherry blossoms, temples, sushi restaurants, traditional ryokans",
+        "flight_summary": "As your expert flight booking specialist, I'm delighted to help you navigate the highly sought-after cherry blossom season in Tokyo for March 10-25, 2026. This is a truly magical time, but it demands ...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1771,
+        "latency_ms": 33545,
+        "timestamp": "2025-12-06T14:51:02.232901",
+        "similarity_score": 0.4
+      }
+    ],
+    "tokyo_cherry_blossoms,_temples,_sushi_restaurants,": [
+      {
+        "id": "trip_default_user_1",
+        "destination": "Tokyo, Japan",
+        "travel_dates": "March 15-25, 2026",
+        "preferences": "cherry blossoms, temples, sushi restaurants, traditional ryokans",
+        "flight_summary": "As an expert flight booking specialist, I'm thrilled to help you plan your trip to Tokyo during the magical cherry blossom season of March 2026. This is a highly sought-after travel period, so strateg...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1232,
+        "latency_ms": 38459,
+        "timestamp": "2025-12-06T14:46:00.995247",
+        "similarity_score": 0.6000000000000001
+      },
+      {
+        "id": "trip_default_user_1",
+        "destination": "Tokyo, Japan",
+        "travel_dates": "March 10-25, 2026",
+        "preferences": "cherry blossoms, temples, sushi restaurants, traditional ryokans",
+        "flight_summary": "As your expert flight booking specialist, I'm delighted to help you navigate the highly sought-after cherry blossom season in Tokyo for March 10-25, 2026. This is a truly magical time, but it demands ...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1771,
+        "latency_ms": 33545,
+        "timestamp": "2025-12-06T14:51:02.232901",
+        "similarity_score": 0.6000000000000001
+      },
+      {
+        "id": "trip_default_user_1",
+        "destination": "Hyd, India",
+        "travel_dates": "March 15-25, 2026",
+        "preferences": "cherry blossoms, temples, sushi restaurants, traditional ryokans",
+        "flight_summary": "As an expert flight booking specialist, I've thoroughly reviewed your",
+        "hotel_summary": "Greetings! As your expert hotel booking specialist, I understand your unique preferences derived from your Tokyo experience. The 0/5 rating from your previous trip is a crucial detail, indicating a ne...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1342,
+        "latency_ms": 33657,
+        "timestamp": "2025-12-06T14:48:33.242992",
+        "similarity_score": 0.4
+      }
+    ],
+    "paris, france_museums_and_local_food": [
+      {
+        "id": "trip_default_user_1",
+        "destination": "Paris, France",
+        "travel_dates": "June 1 - June 10, 2025",
+        "preferences": "museums and local food",
+        "flight_summary": "Alright, let's craft the perfect flight plan for your journey to Paris! As an expert flight booking specialist, I understand the nuances of long-haul travel, especially during peak seasons like June. ...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1277,
+        "latency_ms": 40333,
+        "timestamp": "2025-12-06T15:34:19.621834",
+        "similarity_score": 0.8
+      }
+    ],
+    "new york, usa_christmas_lights_and_shopping": [
+      {
+        "id": "trip_guest_user_1",
+        "destination": "New York, USA",
+        "travel_dates": "Dec 20 - Dec 22, 2025",
+        "preferences": "Christmas lights and shopping",
+        "flight_summary": "As an expert flight booking specialist, I understand the nuances of travel, especially during peak seasons. Your request for a quick trip to New York City from **December 20 - December 22, 2025**, spe...",
+        "hotel_summary": "As an expert hotel booking specialist, I understand your desire to experience the magical Christmas lights and renowned shopping of New York City, especially coming from a background that appreciates ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1092,
+        "latency_ms": 32202,
+        "timestamp": "2025-12-06T15:40:10.201897",
+        "similarity_score": 0.8
+      }
+    ],
+    "austin, america_schools": [
+      {
+        "id": "trip_test_user_1",
+        "destination": "Austin, America",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "As an expert flight booking specialist, I'm delighted to help you plan your trip to Austin, America! Your preferences for \"art museums\" and \"cafes\" are a perfect match for Austin's vibrant cultural sc...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1293,
+        "latency_ms": 31299,
+        "timestamp": "2025-12-06T15:26:52.834184",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "America",
+        "travel_dates": "Next month",
+        "preferences": "art museums, cafes, Eiffel Tower",
+        "flight_summary": "As an expert flight booking specialist, I've thoroughly reviewed your past travel experiences and your current request. Your consistent interest in \"art museums, cafes, and the Eiffel Tower\" is very c...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1603,
+        "latency_ms": 30710,
+        "timestamp": "2025-12-06T15:27:20.581745",
+        "similarity_score": 0.2
+      },
+      {
+        "id": "trip_test_user_1",
+        "destination": "Tokyo, Japan",
+        "travel_dates": "March 15-25, 2026",
+        "preferences": "temples, cherry blossoms, sushi",
+        "flight_summary": "\u26a0\ufe0f Safety filter triggered for flight. Providing generic response instead.\n\nBased on your travel plans to your destination, here are general flight recommendations:\n\n**Recommended Approach:**\n1. **Boo...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1122,
+        "latency_ms": 32148,
+        "timestamp": "2025-12-06T15:04:11.514008",
+        "similarity_score": 0.0
+      }
+    ],
+    "austin_movie_theaters": [
+      {
+        "id": "trip_guest_user_1",
+        "destination": "austin",
+        "travel_dates": "march 2nd to march 10th",
+        "preferences": "schools",
+        "flight_summary": "Welcome! As your expert flight booking specialist, I'm ready to dive deep into finding you the best options for your trip to Austin. Your interest in museums, local food, and shopping aligns perfectly...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1237,
+        "latency_ms": 38810,
+        "timestamp": "2025-12-06T19:22:26.837702",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_guest_user_1",
+        "destination": "Paris, France",
+        "travel_dates": "June 1 - June 10, 2025",
+        "preferences": "museums and local food",
+        "flight_summary": "Alright, let's craft the perfect flight plan for your journey to Paris, France, from June 1st to June 10th, 2025! As an expert flight booking specialist, I understand the nuances of long-haul travel, ...",
+        "hotel_summary": "It sounds like your last trip to Paris, despite your keen interest in its museums and local cuisine, fell short of expectations with a 0/5 rating. My goal is to completely transform your next visit by...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 2087,
+        "latency_ms": 37294,
+        "timestamp": "2025-12-06T15:39:58.733981",
+        "similarity_score": 0.0
+      },
+      {
+        "id": "trip_guest_user_1",
+        "destination": "New York, USA",
+        "travel_dates": "Dec 20 - Dec 22, 2025",
+        "preferences": "Christmas lights and shopping",
+        "flight_summary": "As an expert flight booking specialist, I understand the nuances of travel, especially during peak seasons. Your request for a quick trip to New York City from **December 20 - December 22, 2025**, spe...",
+        "hotel_summary": "As an expert hotel booking specialist, I understand your desire to experience the magical Christmas lights and renowned shopping of New York City, especially coming from a background that appreciates ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1092,
+        "latency_ms": 32202,
+        "timestamp": "2025-12-06T15:40:10.201897",
+        "similarity_score": 0.0
+      }
+    ],
+    "paris, france_art_museums,_local_cuisine,_boutique": [
+      {
+        "id": "trip_guest_user_1",
+        "destination": "Paris, France",
+        "travel_dates": "June 1 - June 10, 2025",
+        "preferences": "museums and local food",
+        "flight_summary": "Alright, let's craft the perfect flight plan for your journey to Paris, France, from June 1st to June 10th, 2025! As an expert flight booking specialist, I understand the nuances of long-haul travel, ...",
+        "hotel_summary": "It sounds like your last trip to Paris, despite your keen interest in its museums and local cuisine, fell short of expectations with a 0/5 rating. My goal is to completely transform your next visit by...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 2087,
+        "latency_ms": 37294,
+        "timestamp": "2025-12-06T15:39:58.733981",
+        "similarity_score": 0.5142857142857143
+      },
+      {
+        "id": "trip_guest_user_1",
+        "destination": "Paris, France",
+        "travel_dates": "June 1 - June 10, 2025",
+        "preferences": "museums and local food",
+        "flight_summary": "Given your previous trip to Paris rated 0/5, my primary focus will be on ensuring a drastically improved and stress-free travel experience this time. The goal is to make the journey itself comfortable...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1429,
+        "latency_ms": 40158,
+        "timestamp": "2025-12-06T15:47:17.494401",
+        "similarity_score": 0.5142857142857143
+      },
+      {
+        "id": "trip_guest_user_1",
+        "destination": "New York, USA",
+        "travel_dates": "Dec 20 - Dec 22, 2025",
+        "preferences": "Christmas lights and shopping",
+        "flight_summary": "As an expert flight booking specialist, I understand the nuances of travel, especially during peak seasons. Your request for a quick trip to New York City from **December 20 - December 22, 2025**, spe...",
+        "hotel_summary": "As an expert hotel booking specialist, I understand your desire to experience the magical Christmas lights and renowned shopping of New York City, especially coming from a background that appreciates ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1092,
+        "latency_ms": 32202,
+        "timestamp": "2025-12-06T15:40:10.201897",
+        "similarity_score": 0.0
+      }
+    ],
+    "austin_shopping": [
+      {
+        "id": "trip_guest_user_1",
+        "destination": "austin",
+        "travel_dates": "march 2nd to march 10th",
+        "preferences": "schools",
+        "flight_summary": "Welcome! As your expert flight booking specialist, I'm ready to dive deep into finding you the best options for your trip to Austin. Your interest in museums, local food, and shopping aligns perfectly...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1237,
+        "latency_ms": 38810,
+        "timestamp": "2025-12-06T19:22:26.837702",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_guest_user_1",
+        "destination": "austin",
+        "travel_dates": "march 2nd to march 10th",
+        "preferences": "movie theaters",
+        "flight_summary": "Alright, let's get you to Austin for your movie theater exploration! As an expert flight booking specialist, I'll leverage my knowledge of routes, pricing, and airline strategies to provide you with t...",
+        "hotel_summary": "\u26a0\ufe0f Safety filter triggered for hotel. Providing generic response instead.\n\nHere are hotel recommendations for your destination:\n\n**Booking Strategy:**\n1. **Location**: Stay near public transportation ...",
+        "itinerary_highlights": [
+          "Welcome back to Austin! This time, we're diving deep into the city's incredible cinema scene, ensuri"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1355,
+        "latency_ms": 29956,
+        "timestamp": "2025-12-06T19:25:14.157407",
+        "similarity_score": 0.4
+      },
+      {
+        "id": "trip_guest_user_1",
+        "destination": "New York, USA",
+        "travel_dates": "Dec 20 - Dec 22, 2025",
+        "preferences": "Christmas lights and shopping",
+        "flight_summary": "As an expert flight booking specialist, I understand the nuances of travel, especially during peak seasons. Your request for a quick trip to New York City from **December 20 - December 22, 2025**, spe...",
+        "hotel_summary": "As an expert hotel booking specialist, I understand your desire to experience the magical Christmas lights and renowned shopping of New York City, especially coming from a background that appreciates ...",
+        "itinerary_highlights": [
+          "\u26a0\ufe0f Safety filter triggered for itinerary. Providing generic response instead.\n\nHere's a general itin"
+        ],
+        "satisfaction_rating": 0,
+        "token_usage": 1092,
+        "latency_ms": 32202,
+        "timestamp": "2025-12-06T15:40:10.201897",
+        "similarity_score": 0.13333333333333333
+      }
     ]
   },
   "cache_order": [
@@ -335,7 +975,23 @@
     "hyderabad_art_museums,_cafes,_romantic_walks",
     "karimanagar_art_museums,_local_cuisine,_boutique",
     "hyderabad_art_museums,_local_cuisine,_boutique",
-    "delhi_art_museums,_local_cuisine,_boutique"
+    "delhi_art_museums,_local_cuisine,_boutique",
+    "hyd, india_cherry_blossoms,_temples,_sushi_restaurants,",
+    "tokyo, japan_cherry_blossoms,_temples,_sushi_restaurants,",
+    "barcelona, spain_art_museums,_cafes,_eiffel_tower",
+    "india_art_museums,_cafes,_eiffel_tower",
+    "hyderabad, india_art_museums,_cafes,_eiffel_tower",
+    "india _art_museums,_cafes,_eiffel_tower",
+    "austin, america_art_museums,_cafes,_eiffel_tower",
+    "america_art_museums,_cafes,_eiffel_tower",
+    "london, uk_cherry_blossoms,_temples,_sushi_restaurants,",
+    "tokyo_cherry_blossoms,_temples,_sushi_restaurants,",
+    "paris, france_museums_and_local_food",
+    "new york, usa_christmas_lights_and_shopping",
+    "austin, america_schools",
+    "austin_movie_theaters",
+    "paris, france_art_museums,_local_cuisine,_boutique",
+    "austin_shopping"
   ],
   "stats": {
     "pune_gaudi_architecture,_tapas_bars,_beaches,": {
@@ -379,7 +1035,103 @@
       "satisfaction_score": 0.5,
       "created_at": "2025-11-26T01:10:45.384305",
       "last_used": "2025-11-26T02:06:37.800247"
+    },
+    "hyd, india_cherry_blossoms,_temples,_sushi_restaurants,": {
+      "usage_count": 4,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T14:48:21.420734",
+      "last_used": "2025-12-06T14:48:21.425814"
+    },
+    "tokyo, japan_cherry_blossoms,_temples,_sushi_restaurants,": {
+      "usage_count": 4,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T14:50:50.605179",
+      "last_used": "2025-12-06T14:50:50.608385"
+    },
+    "barcelona, spain_art_museums,_cafes,_eiffel_tower": {
+      "usage_count": 16,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:05:51.953003",
+      "last_used": "2025-12-06T15:16:41.646285"
+    },
+    "india_art_museums,_cafes,_eiffel_tower": {
+      "usage_count": 4,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:23:11.252509",
+      "last_used": "2025-12-06T15:23:11.257268"
+    },
+    "hyderabad, india_art_museums,_cafes,_eiffel_tower": {
+      "usage_count": 4,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:24:14.949154",
+      "last_used": "2025-12-06T15:24:14.952490"
+    },
+    "india _art_museums,_cafes,_eiffel_tower": {
+      "usage_count": 4,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:25:33.915200",
+      "last_used": "2025-12-06T15:25:33.920072"
+    },
+    "austin, america_art_museums,_cafes,_eiffel_tower": {
+      "usage_count": 4,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:26:41.731961",
+      "last_used": "2025-12-06T15:26:41.735382"
+    },
+    "america_art_museums,_cafes,_eiffel_tower": {
+      "usage_count": 4,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:27:09.182813",
+      "last_used": "2025-12-06T15:27:09.186874"
+    },
+    "london, uk_cherry_blossoms,_temples,_sushi_restaurants,": {
+      "usage_count": 10,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:34:33.180543",
+      "last_used": "2025-12-06T15:34:44.219935"
+    },
+    "tokyo_cherry_blossoms,_temples,_sushi_restaurants,": {
+      "usage_count": 10,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:35:37.837617",
+      "last_used": "2025-12-06T15:35:49.419765"
+    },
+    "paris, france_museums_and_local_food": {
+      "usage_count": 22,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:39:45.765605",
+      "last_used": "2025-12-06T15:47:17.492819"
+    },
+    "new york, usa_christmas_lights_and_shopping": {
+      "usage_count": 10,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:47:17.504222",
+      "last_used": "2025-12-06T15:47:28.589960"
+    },
+    "austin, america_schools": {
+      "usage_count": 10,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T15:51:48.767280",
+      "last_used": "2025-12-06T15:51:59.849576"
+    },
+    "austin_movie_theaters": {
+      "usage_count": 10,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T19:25:03.004812",
+      "last_used": "2025-12-06T19:25:14.154233"
+    },
+    "paris, france_art_museums,_local_cuisine,_boutique": {
+      "usage_count": 34,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T19:33:28.875155",
+      "last_used": "2025-12-06T19:34:27.027389"
+    },
+    "austin_shopping": {
+      "usage_count": 10,
+      "satisfaction_score": 0.5,
+      "created_at": "2025-12-06T19:41:05.340622",
+      "last_used": "2025-12-06T19:41:16.331562"
     }
   },
-  "last_updated": "2025-11-26T02:06:37.800273"
+  "last_updated": "2025-12-06T19:41:16.331579"
 }

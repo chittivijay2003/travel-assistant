@@ -60,8 +60,8 @@ async def travel_assistant(request: TravelRequest):
             "Travel Assistant Metrics",
             request_id=request_id,
             total_latency_ms=total_latency_ms,
-            service_latency_ms=response.total_latency_ms,
-            total_tokens=response.token_metrics.total_tokens,
+            service_latency_ms=response.latency_ms,
+            total_tokens=response.token_usage,
             user_id=request.user_id,
             destination=request.destination,
         )

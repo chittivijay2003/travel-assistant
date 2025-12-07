@@ -15,8 +15,8 @@ from typing import List, Optional, Dict
 class TravelRequest(BaseModel):
     """Request schema for travel assistant endpoint.
 
-    At least one of destination, travel_dates, or preferences must be provided.
-    Missing fields will be filled from user history.
+    All three fields (destination, travel_dates, preferences) are required.
+    User ID is optional and defaults to "default_user".
 
     Example:
         {
@@ -27,30 +27,20 @@ class TravelRequest(BaseModel):
         }
     """
 
-    destination: Optional[str] = Field(
-        default=None, description="Travel destination (e.g., 'Paris, France')"
+    destination: str = Field(
+        ..., description="Travel destination (e.g., 'Paris, France')"
     )
-    travel_dates: Optional[str] = Field(
-        default=None,
+    travel_dates: str = Field(
+        ...,
         description="Travel dates in natural language (e.g., 'June 1 - June 10, 2025')",
     )
-    preferences: Optional[str] = Field(
-        default=None, description="Travel preferences and interests as free text"
+    preferences: str = Field(
+        ..., description="Travel preferences and interests as free text"
     )
     user_id: Optional[str] = Field(
-        default="default_user",
-        description="User ID for personalized few-shot examples (optional)",
+        default="guest_user",
+        description="User ID for personalized few-shot examples (defaults to guest_user)",
     )
-
-    @model_validator(mode="after")
-    def check_at_least_one_field(self):
-        """Validate that at least one of destination, travel_dates, or preferences is provided."""
-        if not any([self.destination, self.travel_dates, self.preferences]):
-            raise ValueError(
-                "At least one of 'destination', 'travel_dates', or 'preferences' must be provided. "
-                "Missing fields will be filled from user history."
-            )
-        return self
 
 
 # Detailed metrics for individual components
@@ -132,38 +122,36 @@ class QualityMetrics(BaseModel):
     )
 
 
-# New response format for Assignment
+# Simplified response format for end users
 class TravelAssistantResponse(BaseModel):
-    """Complete response from travel assistant endpoint.
+    """Simplified response from travel assistant endpoint.
 
-    New format matching assignment requirements with detailed metrics:
+    Clean, user-friendly format:
         {
-            "flight_recommendations": "Round-trip flights...",
-            "hotel_recommendations": "3 boutique hotels...",
-            "itinerary": "Day 1: Visit...",
-            "scenario_outputs": {...},
-            "token_metrics": {...},
-            "quality_metrics": {...},
-            "total_latency_ms": 890
+            "flight_recommendations": "Round-trip flights from New York to Paris...",
+            "hotel_recommendations": "3 boutique hotels near Montmartre...",
+            "itinerary": "Day 1: Visit the Louvre and Seine cruise...",
+            "token_usage": 1450,
+            "latency_ms": 890,
+            "prompt_templates": {...},
+            "selected_few_shot_examples": [...]
         }
     """
 
-    # Primary response (Scenario 3 - Smart optimized)
     flight_recommendations: str = Field(
-        ..., description="Flight search results and recommendations (Scenario 3)"
+        ..., description="Flight search results and recommendations"
     )
     hotel_recommendations: str = Field(
-        ..., description="Hotel suggestions based on preferences (Scenario 3)"
+        ..., description="Hotel suggestions based on preferences"
     )
-    itinerary: str = Field(..., description="Day-by-day travel itinerary (Scenario 3)")
-
-    # Scenario comparison outputs
-    scenario_outputs: Dict[str, Dict[str, str]] = Field(
-        ..., description="AI responses for all 3 scenarios"
+    itinerary: str = Field(..., description="Day-by-day travel itinerary")
+    
+    token_usage: int = Field(..., description="Total tokens used")
+    latency_ms: int = Field(..., description="Response time in milliseconds")
+    
+    prompt_templates: Dict[str, str] = Field(
+        ..., description="LangChain prompt templates used (flight, hotel, itinerary)"
     )
-
-    token_metrics: TokenMetrics = Field(..., description="Detailed token usage metrics")
-    quality_metrics: QualityMetrics = Field(..., description="AI quality measurements")
-    total_latency_ms: int = Field(
-        ..., description="Total response time in milliseconds"
+    selected_few_shot_examples: List[str] = Field(
+        ..., description="Few-shot examples selected for this request"
     )

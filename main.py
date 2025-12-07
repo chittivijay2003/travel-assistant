@@ -111,7 +111,14 @@ async def root():
     """
     html_path = os.path.join("app", "templates", "index.html")
     if os.path.exists(html_path):
-        return FileResponse(html_path)
+        return FileResponse(
+            html_path,
+            headers={
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "0",
+            },
+        )
     return {
         "message": "Travel Assistant API",
         "version": settings.app_version,

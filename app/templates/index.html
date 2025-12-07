@@ -380,7 +380,7 @@
             };
             
             try {
-                const response = await fetch('/api/travel-assistant', {
+                const response = await fetch('/travel-assistant', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -394,34 +394,43 @@
                 
                 const data = await response.json();
                 
-                // Display Flash response with formatting
-                document.getElementById('flashLatency').textContent = `${data.flash.latency_ms}ms`;
-                document.getElementById('flashResponse').innerHTML = formatResponse(data.flash.raw_response);
+                // Display response with formatting (simplified format)
+                document.getElementById('flashLatency').textContent = `${data.latency_ms}ms`;
                 
-                // Display Pro response with formatting
-                document.getElementById('proLatency').textContent = `${data.pro.latency_ms}ms`;
-                document.getElementById('proResponse').innerHTML = formatResponse(data.pro.raw_response);
+                // Format the combined response
+                const formattedResponse = `
+<h3>✈️ Flight Recommendations</h3>
+${formatResponse(data.flight_recommendations)}
+
+<h3>🏨 Hotel Recommendations</h3>
+${formatResponse(data.hotel_recommendations)}
+
+<h3>📅 Itinerary</h3>
+${formatResponse(data.itinerary)}
+                `.trim();
                 
-                // Display comparison - format summary with line breaks
+                document.getElementById('flashResponse').innerHTML = formattedResponse;
+                
+                // Hide Pro response section (not used in simplified API)
+                document.getElementById('proLatency').textContent = 'N/A';
+                document.getElementById('proResponse').innerHTML = '<p style="color: #666;">Pro model comparison not available in simplified API</p>';
+                
+                // Display metadata
                 const summaryElement = document.getElementById('comparisonSummary');
-                summaryElement.innerHTML = '';
-                
-                // Split summary by sentences or emoji markers for better formatting
-                const summaryParts = data.comparison.summary.split(/([.!?]\s+(?=[A-Z🎨✨🖼️⚡📝]))/);
-                let summaryHTML = '<div style="line-height: 1.8;">';
-                
-                for (let i = 0; i < summaryParts.length; i += 2) {
-                    if (summaryParts[i] && summaryParts[i].trim()) {
-                        const sentence = summaryParts[i] + (summaryParts[i + 1] || '');
-                        summaryHTML += `<p style="margin-bottom: 10px;">${sentence.trim()}</p>`;
-                    }
-                }
-                summaryHTML += '</div>';
-                summaryElement.innerHTML = summaryHTML;
+                summaryElement.innerHTML = `
+                    <p><strong>Total Tokens Used:</strong> ${data.token_usage}</p>
+                    <p><strong>Response Time:</strong> ${data.latency_ms}ms</p>
+                    <p><strong>Few-Shot Examples:</strong> ${data.selected_few_shot_examples.length} examples selected</p>
+                `;
                 
                 const flashStrengthsList = document.getElementById('flashStrengths');
                 flashStrengthsList.innerHTML = '';
-                data.comparison.flash_strengths.forEach(strength => {
+                const strengths = [
+                    'Personalized recommendations based on your preferences',
+                    'Dynamic few-shot learning from travel history',
+                    'Comprehensive itinerary planning'
+                ];
+                strengths.forEach(strength => {
                     const li = document.createElement('li');
                     li.textContent = strength;
                     li.style.marginBottom = '8px';
@@ -430,14 +439,7 @@
                 
                 const proStrengthsList = document.getElementById('proStrengths');
                 proStrengthsList.innerHTML = '';
-                data.comparison.pro_strengths.forEach(strength => {
-                    const li = document.createElement('li');
-                    li.textContent = strength;
-                    li.style.marginBottom = '8px';
-                    proStrengthsList.appendChild(li);
-                });
-                
-                document.getElementById('recommendedPlan').textContent = data.comparison.recommended_plan;
+                document.getElementById('recommendedPlan').textContent = 'Using Gemini Flash with LangChain prompt templates';
                 
                 // Show results
                 loading.style.display = 'none';
